@@ -12,8 +12,12 @@ class App extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick() {
+  handleClick(e) {
     this.setState(state => ({ count: state.count + 1 }))
+
+  }
+
+  componentDidMount() {
     console.log("mounted");
   }
 
